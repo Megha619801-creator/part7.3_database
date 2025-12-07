@@ -1,1 +1,3 @@
 datasource\MariaDbJpaConnection.class
+entity\Transaction.class
+dao\TransactionDao.class

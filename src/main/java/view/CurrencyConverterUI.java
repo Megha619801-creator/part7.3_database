@@ -89,7 +89,7 @@ public class CurrencyConverterUI extends Application {
                     return;
                 }
 
-                double result = controller.convert(amount, from, to);
+                double result = controller.convert(amount, from, to); // Stores transaction automatically
                 resultField.setText(String.format("%.2f", result));
             } catch (NumberFormatException ex) {
                 resultField.setText("Invalid amount!");
