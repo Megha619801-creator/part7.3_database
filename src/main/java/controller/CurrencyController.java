@@ -39,5 +39,10 @@ public class CurrencyController {
         currencyDao.persist(c);
         return true;
     }
+
+    public void saveCurrency(String name, String abbreviation, double rate) {
+        currency currency = new currency(name, abbreviation, rate);
+        currencyDao.persist(currency); // Insert into DB
+    }
 }
 
